@@ -33,10 +33,12 @@ This enriched dataset will allow comparisons such as:
 ## Analysis Plan  
 
 ### 1. Data Collection & Cleaning  
-1-Data Collection, Cleaning & Omitting and Other Actions.
-2-Import CSV files from OWID. 
-3-Consolidate datasets by country and year. 
+
+1-Data Collection, Cleaning & Omitting and Other Actions.  
+2-Import CSV files from OWID.  
+3-Consolidate datasets by country and year.  
 4-Manage missing values (NAs) and normalize percentage and time data.
+
 
 ### 2. Analysis Techniques  
 
