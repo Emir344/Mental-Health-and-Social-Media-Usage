@@ -4,7 +4,7 @@
 ---
 
 ## Motivation  
-Social media has become an indispensable aspect of everyday living in our century. However, excessive social media use has been connected to possible detrimental impacts on mental health, such as elevated levels of loneliness, anxiety, and depression. The motivation of this study is to investigate whether there is a quantifiable correlation between the amount of time spent on social media and mental health indicators (such as anxiety or depression) in various nations.
+Social media has become an indispensable aspect of everyday living in our century. However, excessive social media use has been connected to possible detrimental impacts on mental health, such as elevated levels of loneliness, anxiety, and depression. The motivation of this study is to investigate whether there is a quantifiable correlation between the amount of time spent on social media and mental health indicators (such as anxiety or depression) in USA.
 
 ---
 
