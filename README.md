@@ -11,12 +11,12 @@ Social media has become an indispensable aspect of everyday living in our centur
 ## Data Sources  
 
 ### 1. Mental Health Dataset  
-- **Description:** Includes worldwide data on mental health conditions such as substance abuse, anxiety, and depression.  
+- **Description:** Includes USA data on mental health conditions such as substance abuse, anxiety, and depression.  
 - **Source:** https://www.kaggle.com/datasets/thedevastator/global-mental-health-disorders?resource=download&select=Mental+health+Depression+disorder+Data.csv
 - **Data file:** `mental-health-and-substance-use.csv`  
 
 ### 2. Internet and Social Media Usage Dataset  
-- **Description:** Contains annual statistics on average daily social media use, internet penetration, and smartphone ownership worldwide.  
+- **Description:** Contains annual statistics on average daily social media use, internet penetration in USA. 
 - **Source:** https://ourworldindata.org/grapher/daily-hours-spent-with-digital-media-per-adult-user 
 - **Data file:** `share-of-individuals-using-the-internet.csv` or `time-spent-on-social-media.csv`  
 
