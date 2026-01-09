@@ -38,82 +38,37 @@ This project uses two datasets from Our World in Data.
 ## Data Preparation
 - Filtered datasets by country (USA) and year (2008–2017)  
 - Combined digital media usage across device types into a one variable  
-- Managed missing values  
+- Handled missing values  
 - Merged datasets by year to create a whole dataset  
 
 ---
 
-## Exploratory Data Analysis (EDA)
-- Digital media usage increased rapidly over time  
-- Mental health trends differ significantly across disorders  
-- Bar plots were preferred due to the narrow yearly observations  
+## Data Analysis
+- Perform exploratory data analysis (EDA) to identify critical trends.
+- Use bar plots and standardized visualizations to compare mental health disorders.
+- Apply correlation analysis such as spearman to analyze relationship between digital media usage and mental health trends.
 
 ---
 
-## Standardized Trend Analysis
-- Mental health variables standardized using z-score normalization  
-- Easy to compare mental disorders  
-- Depression, anxiety, bipolar disorder, and schizophrenia have shown different patterns when observed  
+### Modeling
+- Apply machine learning regression models to predict the distribution.
+- Regression models: Linear Regression, Ridge Regression, Lasso Regression  
+- Evaluate models using Leave-One-Out Cross-Validation.
+- Compare model achievement by using Root Mean Squared Error (RMSE).
 
 ---
 
-## Statistical Analysis
-- Spearman correlation analysis due to non-linearity and robustness  
-- Hypothesis testing for better interpretation  
-- Results revealed a substantial association between digital media usage and depression trends  
+### Instruments and Libraries
+- **pandas** and **NumPy** for data manipulation
+- **Matplotlib** and **Seaborn** for data visualization
+- **scikit-learn** for machine learning models and evaluation
 
 ---
 
-## Machine Learning Methods
 
-ML techniques to predict depression prevalence using digital media usage and time as predictors.
+ 
 
-### Models Used
-- Linear Regression  
-- Ridge Regression  
-- Lasso Regression  
-- Leave-One-Out Cross-Validation  
-- Root Mean Squared Error (RMSE)  
 
-### ML Result
-Depression prevalence trends can be estimated by using digital media usage and time. Ridge regression presented the most trustable outcomes because of its delicate standardization.
-
----
-
-## Results
-- Digital media usage increased frequently in time  
-- Depression and bipolar disorder showed upward trends  
-- Simple regression and ML models performed well  
-- The relationship observed is predictive, not causal  
-
----
-
-## Limitations and Future Work
-
-### Limitations
-- Sufficien but small sample size due to the specific years (2008–2017)  
-- No causal inference can be made  
-
-### Future Work
-- Extending analysis to multiple countries could give us more general point of view  
-- Include additional variables such as economic or demographic indicators more realistic outcomes  
-
----
-
-## Conclusion
-
-This project applied data science techniques to investigate the connection between digital media use and trends in mental health in the US. The aftermath suggests that changeovers in mental health trends, especially depression, are related to increased use of digital media. The strong predictive performance of ML models proved the utility of digital media usage as a predictor.
-
-Consequently, this project demonstrates how datasets can be used to learn more about important social complications.
-
----
-
-## References
-- IHME, Global Burden of Disease (2024), processed by Our World in Data  
-- BOND Internet Trends (2019), processed by Our World in Data  
-- https://ourworldindata.org/mental-health
-- https://ourworldindata.org/grapher/daily-hours-spent-with-digital-media-per-adult-user 
-- https://www.bondcap.com/report/it19/#view/41  
 
 
 
