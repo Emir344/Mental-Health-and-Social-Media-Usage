@@ -1,82 +1,120 @@
-# Mental Health and Social Media Usage  
-**Project Proposal**  
+# Mental Health and Digital Media Usage  
+**DSA 210 Term Project**
 
 ---
 
-## Motivation  
-Social media has become an indispensable aspect of everyday living in our century. However, excessive social media use has been connected to possible detrimental impacts on mental health, such as elevated levels of loneliness, anxiety, and depression. The motivation of this study is to investigate whether there is a quantifiable correlation between the amount of time spent on social media and mental health indicators (such as anxiety or depression) in USA.
+## Project Motivation
+
+Digital media usage has increased throughout the recent decade because of the increasing utilization of technological tools like smartphones, computers, and other devices. Simultaneously, mental health disorders such as anxiety, depression, bipolar disorder, and schizophrenia have revealed an increasing public health concern.
+
+My motivation of choosing this topic is to observe whether there is a noticeable correlation between digital media usage and mental health trends in the USA. Especially, this project’s main goal is to investigate whether changes in digital media consumption over time are related with changes in mental health prevalence.
+
+This project includes data science techniques to explore trends, observe, predict patterns and at the end to make assumptions about research. We are making this by aggregating two datasets, mental health data and digital media usage data.
 
 ---
 
-## Data Sources  
+## Data Sources
 
-### 1. Mental Health Dataset  
-- **Description:** Includes USA data on mental health conditions such as substance abuse, anxiety, and depression.  
-- **Source:** https://www.kaggle.com/datasets/thedevastator/global-mental-health-disorders?resource=download&select=Mental+health+Depression+disorder+Data.csv
-- **Data file:** `mental-health-and-substance-use.csv`  
+This project uses two datasets from Our World in Data.
 
-### 2. Internet and Social Media Usage Dataset  
-- **Description:** Contains annual statistics on average daily social media use, internet penetration in USA. 
-- **Source:** https://ourworldindata.org/grapher/daily-hours-spent-with-digital-media-per-adult-user 
-- **Data file:** `share-of-individuals-using-the-internet.csv` or `time-spent-on-social-media.csv`  
+### 1. Mental Health Data
+- **Source:** Our World in Data – Mental Health  
+- **Variables:** Anxiety disorders, Depression, Bipolar disorder, Schizophrenia  
+- **Description:** Annual prevalence (%) of mental health disorders by country  
+- **Time Period:** 2008–2017  
+- **Geographic Focus:** USA  
+- **Link:** •	https://ourworldindata.org/mental-health
 
----
-
-## Data Enrichment  
-The two datasets will be merged using **country** and **year** to expand the analysis.  
-This enriched dataset will allow comparisons such as:  
--How the frequency of anxiety or depression is correlated with the average time spent on social media.  
--How the relationship between social media use and mental health differs across countries.  
-
----
-
-## Analysis Plan  
-
-### 1. Data Collection & Cleaning  
-
-1-Data Collection, Cleaning & Omitting and Other Actions.  
-2-Import CSV files from OWID.  
-3-Consolidate datasets by country and year.  
-4-Manage missing values (NAs) and normalize percentage and time data.
-
-
-### 2. Analysis Techniques  
-
-#### • Exploratory Data Analysis (EDA)  
-- Show global patterns of mental health problems.  
-- Compare social media use across countries and years.  
-- Find connections between social media time and mental health rates.  
-
-#### • Statistical Testing  
-- Use t-tests and correlation tests to determine if relationships are paramount.  
-
-#### • Modeling  
-- Use social media and internet usage data, create simple or numerous linear regression models to forecast mental health levels.  
-
-#### • Visualization  
-- Build scatter plots with regression lines by continent.
-- Make heatmaps to show how mental health changes with social media use.  
+### 2. Digital Media Usage Data
+- **Source:** Our World in Data (BOND Internet Trends, 2019)  
+- **Variables:** Daily hours spent on mobile, desktop/laptop, and other connected devices  
+- **Description:** Average daily digital media usage per adult  
+- **Time Period:** 2008–2017  
+- **Geographic Focus:** United States  
+- **Link:** https://ourworldindata.org/grapher/daily-hours-spent-with-digital-media-per-adult-user 
 
 ---
 
-## Tools & Environment  
-- **Programming Language:** Python  
-- **Libraries:** pandas, numpy, matplotlib, seaborn, scikit-learn, statsmodels
-  
----
-
-## Anticipated Results  
-- Identify whether increased social media use is linked to higher anxiety or depression rates.  
-- Comprehend which countries proclaims the strongest correlations.  
-- Create visual and statistical summaries that highlight global mental health trends.  
+## Data Preparation
+- Filtered datasets by country (USA) and year (2008–2017)  
+- Combined digital media usage across device types into a one variable  
+- Managed missing values  
+- Merged datasets by year to create a whole dataset  
 
 ---
 
-## Limitations & Future Work  
-- Bias may be introduced into the analysis due to missing or inconsistent data from certain countries.  
-- The analysis only shows **correlation**, not **causation** , social media may not directly cause mental health issues.  
+## Exploratory Data Analysis (EDA)
+- Digital media usage increased rapidly over time  
+- Mental health trends differ significantly across disorders  
+- Bar plots were preferred due to the narrow yearly observations  
 
 ---
+
+## Standardized Trend Analysis
+- Mental health variables standardized using z-score normalization  
+- Easy to compare mental disorders  
+- Depression, anxiety, bipolar disorder, and schizophrenia have shown different patterns when observed  
+
+---
+
+## Statistical Analysis
+- Spearman correlation analysis due to non-linearity and robustness  
+- Hypothesis testing for better interpretation  
+- Results revealed a substantial association between digital media usage and depression trends  
+
+---
+
+## Machine Learning Methods
+
+ML techniques to predict depression prevalence using digital media usage and time as predictors.
+
+### Models Used
+- Linear Regression  
+- Ridge Regression  
+- Lasso Regression  
+- Leave-One-Out Cross-Validation  
+- Root Mean Squared Error (RMSE)  
+
+### ML Result
+Depression prevalence trends can be estimated by using digital media usage and time. Ridge regression presented the most trustable outcomes because of its delicate standardization.
+
+---
+
+## Results
+- Digital media usage increased frequently in time  
+- Depression and bipolar disorder showed upward trends  
+- Simple regression and ML models performed well  
+- The relationship observed is predictive, not causal  
+
+---
+
+## Limitations and Future Work
+
+### Limitations
+- Sufficien but small sample size due to the specific years (2008–2017)  
+- No causal inference can be made  
+
+### Future Work
+- Extending analysis to multiple countries could give us more general point of view  
+- Include additional variables such as economic or demographic indicators more realistic outcomes  
+
+---
+
+## Conclusion
+
+This project applied data science techniques to investigate the connection between digital media use and trends in mental health in the US. The aftermath suggests that changeovers in mental health trends, especially depression, are related to increased use of digital media. The strong predictive performance of ML models proved the utility of digital media usage as a predictor.
+
+Consequently, this project demonstrates how datasets can be used to learn more about important social complications.
+
+---
+
+## References
+- IHME, Global Burden of Disease (2024), processed by Our World in Data  
+- BOND Internet Trends (2019), processed by Our World in Data  
+- https://ourworldindata.org/mental-health
+- https://ourworldindata.org/grapher/daily-hours-spent-with-digital-media-per-adult-user 
+- https://www.bondcap.com/report/it19/#view/41  
+
 
 
 
