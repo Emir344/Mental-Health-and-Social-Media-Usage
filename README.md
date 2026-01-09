@@ -9,7 +9,7 @@ Digital media usage has increased throughout the recent decade because of the in
 
 My motivation of choosing this topic is to observe whether there is a noticeable correlation between digital media usage and mental health trends in the USA. Especially, this project’s main goal is to investigate whether changes in digital media consumption over time are related with changes in mental health prevalence.
 
-This project includes data science techniques to explore trends, observe, predict patterns and at the end to make assumptions about research. We are making this by aggregating two datasets, mental health data and digital media usage data.
+This project includes data science techniques to explore trends, observe, predict patterns and make assumptions about outcomes. We are doing this by aggregating two datasets, mental health data and digital media usage data.
 
 ---
 
